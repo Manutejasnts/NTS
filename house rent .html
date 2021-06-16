@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>House rent document</title>
+<style>
+aside{width:50%;
+      float:right;
+	  }
+
+</style>
+
+</head>
+<body>
+
+<svg height="110" width="1200">
+ <g transform="translate(100,100)">
+    <text id="TextElement" x="0" y="0" style="font-family:vardana;font-size:44;text-decoration:underline;" >SREE BEERESWARA SWAMY NILAYA
+      <animateMotion path="M0 0 L400 0 L00 00 z" dur="5s" fill="freeze" repeatCount="indefinite" />
+	</text>
+	</g>
+	<animate attributeType="CSS" attributeName="fill" from="red" to="blue" dur="2s"  repeatCount="indefinite"  />	
+  </svg>
+  
+<aside width="auto" height="auto>
+<p style="text-align:center;"><mark><u>SREE BEERESWARA SWAMY NILAYA</u></mark></p>
+<img src="https://lh3.googleusercontent.com/Mou9ei_W4QFgL4iGb8H5jkKw6Eje5z33UazaoA0A427mXKVE21ZEmtzv4Vun76RHOyg" width="auto" margin="200px">
+</aside>
+  
+  
+<p id="dat" text-align="left"></p>
+<script>
+document.getElementById('dat').innerHTML=Date();
+</script>
+
+
+<form border="2px solid red" action="/action_page.php" target="_blank" method="GETS">
+<lable for="housenum" style="font-size:40px;"><mark>HOUSE NUMBER:</mark></lable>
+<select style="font-size:40px; " id="housenum" name="housenum">
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+</select><br><br>
+
+
+
+
+<lable for="date" style="font-size:25px;">1)Date of the Rent   :-</lable>
+<input type="date" id="date" style="font-size:25px;" name="date">
+<br><br>
+
+<lable for="name" style="font-size:25px;">2)NAME               :-</lable>
+<input type="text" id="name" name="name" style="font-size:25px;"><br><br>
+
+<lable style="font-size:25px;" for="rent">3)RENT               :-</lable>
+<input type="number" style="font-size:25px;" id="rent" min="4000" name="rent" ><br><br>
+  
+<lable for="oldb" style="font-size:25px;">4)Old Balance        :-</lable>
+<input type="number" id="oldb" name="oldb" min="50"style="font-size:25px;"><br><br>
+
+<lable for="ebill" style="font-size:25px;">5)Electricity Bill   :-</lable>
+ <input style="font-size:25px;" type="number" id="ebill" name="ebill"><br>
+<lable for="doc"> Recipt of bill:</lable>
+<input type="file" id="doc" name="doc" value="optional"><br><br>
+
+<lable for="cchar" style="font-size:25px;">6)Cleaning Charge:-</lable>
+<select id="cchar" name="cchar" min="100" style="font-size:25px;">
+<option value="100">100Rs</option>
+<option value="150">150Rs</option>
+<option value="200">200Rs</option>
+<option value="250">250Rs</option>
+<option value="300">300Rs</option>
+<option value="350">350Rs</option>
+<option value="400">400Rs</option>
+<option value="450">450Rs</option>
+<option value="500">500Rs</option>
+</select><br><br>
+
+
+<textarea name="message" style="width:500px; height:200px;">
+Text any message required:
+</textarea><br>
+
+<input type="submit" value="submit" style="font-size:25px;"><br>
+
+<input type="reset" value="Reset" style="font-size:15px;"><br>
+ 
+</form>
+<button type="button" onclick="print()" style="font-size:30px;">Click to print the page</button>
+</body>
+</html>
